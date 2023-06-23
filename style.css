@@ -18,30 +18,35 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--semi-black);
 }
-.curriculum-container{
-
-}
 .nav{
     background-color: var(--white);
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--ligh-blue);
+    width: 100%;
 }
 .navbar-rigth {
-    line-height: 120px;
-    margin-right: 50px;
+    line-height: 100px;
+    margin-right: 100px;
+}
+.navbar-rigth .logo-menu{
+    width: 60px;
+    height: 60px;
+    display: none;
 }
 .navbar-rigth ul{
     display: flex;
     list-style: none;
+    flex: wrap;
 }
 .navbar-rigth ul li{
+    align-self: center;
    font-weight: bold;
-   font-size: var(--lg);
+   font-size: var(--md);
 }
 .navbar-rigth ul a{
     text-decoration: none;
-    margin: 10px;
+    margin: 16px;
     color: var(--semi-black);
 }
 .navbar-rigth ul li a:hover{
@@ -49,5 +54,28 @@ body{
  }
 .logo{
     width: 120px;
-    margin: 24px 0 0 48px;
+    margin: 16px 0 0 48px;
+}
+@media (min-width: 640px) and (max-width:950px) {
+    .navbar-rigth ul li{
+        font-size: 12px;
+        text-align: center;
+        width: 100px;
+    }
+  }
+@media (max-width:640px){
+    .logo{
+        width: 100px;
+    }
+    .navbar-rigth ul{
+        display: none;
+    }
+    .navbar-rigth .logo-menu{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 55px;
+        height: 55px;
+        display: block;
+    }
 }
