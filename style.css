@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --semi-black:#1B262C;
+    --dark-hard-blue:#0F4C75;
+    --dark-soft-blue:#3282B8;
+    --ligh-blue:#BBE1FA;
+    --white: #ffffff;
+
+    --sm: 16px;
+    --md: 18px;
+    --lg: 20px
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--semi-black);
+}
+.curriculum-container{
+
+}
+.nav{
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--ligh-blue);
+}
+.navbar-rigth {
+    line-height: 120px;
+    margin-right: 50px;
+}
+.navbar-rigth ul{
+    display: flex;
+    list-style: none;
+}
+.navbar-rigth ul li{
+   font-weight: bold;
+   font-size: var(--lg);
+}
+.navbar-rigth ul a{
+    text-decoration: none;
+    margin: 10px;
+    color: var(--semi-black);
+}
+.navbar-rigth ul li a:hover{
+    color: var(--dark-soft-blue);
+ }
+.logo{
+    width: 120px;
+    margin: 24px 0 0 48px;
+}
